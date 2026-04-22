@@ -17,15 +17,9 @@ import type {
 } from '../types/polymarket';
 
 const API_BASES = {
-  gamma: import.meta.env.DEV
-    ? '/api/gamma'
-    : import.meta.env.VITE_GAMMA_API_BASE_URL || 'https://gamma-api.polymarket.com',
-  data: import.meta.env.DEV
-    ? '/api/data'
-    : import.meta.env.VITE_DATA_API_BASE_URL || 'https://data-api.polymarket.com',
-  clob: import.meta.env.DEV
-    ? '/api/clob'
-    : import.meta.env.VITE_CLOB_API_BASE_URL || 'https://clob.polymarket.com',
+  gamma: import.meta.env.VITE_GAMMA_API_BASE_URL || '/api/gamma',
+  data: import.meta.env.VITE_DATA_API_BASE_URL || '/api/data',
+  clob: import.meta.env.VITE_CLOB_API_BASE_URL || '/api/clob',
 };
 
 export const MARKET_WS_URL =
